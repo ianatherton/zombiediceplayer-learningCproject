@@ -1,7 +1,15 @@
 #include <stdio.h>
-#include <raylib.h>
-#include //main i guess
+#include <stdlib.h>
+#include <time.h>
+#include "../headers/game.h" // Include game header for greeting function
+#include "../dice/dice.h" // Include dice header
 
 int main() {
-    greeting()    
+    // Initialize random seed
+    srand(time(NULL));
+    
+    // Call greeting function
+    greeting();
+    
+    return 0; // Program ends here
 }
