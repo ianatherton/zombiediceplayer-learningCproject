@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <time.h>//we have this because we use rand()
 #include "../headers/game.h" // Include game header for greeting function
 #include "../dice/dice.h" // Include dice header
+#include "../players/players.h" // Include players header
 
 int main() {
-    // Initialize random seed
-    srand(time(NULL));
+    //
     
     // Call greeting function
     greeting();
